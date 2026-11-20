@@ -1,2 +1,169 @@
 # Global-Superstore-Sales-Analysis-
-This project analyses sales and profitability performance of a global retail business using Power BI. The objective is to evaluate sales trends, product category performance, regional sales distribution, profitability and shipping patterns to identify business opportunities and areas requiring improvement and to support data-driven decision-making.
+
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Data Sources](#data-sources)
+- [Tools](#tools)
+- [Data Cleaning and Preparation](#data-cleaning-and-preparation)
+- [Exploratory Data Analysis](#exploratory-data-analysis)
+- [Data Analysis](#data-analysis)
+- [Results and Findings](#results-and-findings)
+- [Recommendations](#recommendations)
+- [Limitations](#limitations)
+- [References](#references)
+
+### Project Overview
+This project focuses on analysing the sales and profitability performance of a global retail business using Microsoft Power BI.
+The objective is to evaluate sales trends, product category performance, regional sales distribution, profitability and shipping patterns to identify business opportunities and areas requiring improvement.
+An interactive dashboard was developed to provide management with insights into key business performance indicators, including total sales, total profit, quantity sold and average order value.
+The analysis supports data-driven decision-making in areas such as sales strategy, product management, regional performance improvement and operational efficiency.
+
+
+<img width="925" height="594" alt="WhatsApp Image 2026-11-20 at 00 24 33" src="https://github.com/user-attachments/assets/3a2b767a-e0c0-423a-a9ec-d0a626dd0b38" />
+
+
+### Data Sources
+
+The project uses the Global Superstore dataset obtained fron Kaggle [Download Here](https://www.kaggle.com/datasets/fatihilhan/global-superstore-dataset).
+
+The dataset contains sales transaction information across different markets, regions, product categories and customer segments.
+
+Key fields used in the analysis include:
+
+* Order ID – Unique identifier for each customer order.
+* Order Date – Date the order was placed.
+* Ship Date – Date the order was shipped.
+* Ship Mode – Shipping method selected.
+* Segment – Customer segment (Consumer, Corporate and Home Office).
+* Region – Geographical sales region.
+* Market – Market in which the transaction occurred.
+* Category – Product category.
+* Sub-Category – Product sub-category.
+* Sales – Revenue generated from sales.
+* Quantity – Number of units sold.
+* Profit – Profit generated from transactions.
+
+### Tools
+
+The following tools and technologies were used:
+
+* CSV/Excel: Source data storage and initial data inspection.
+* DAX (Data Analysis Expressions): Creation of calculated columns, sales measures and profitability indicators.
+* Power Query: Data extraction, transformation and cleaning.
+* Microsoft Power BI Desktop: Dashboard development, data modelling, visualisation and reporting.
+
+### Data Cleaning and Preparation
+
+Data preparation was performed using Power Query in Power BI.
+
+The following are the key activities:
+
+- Imported the Global Superstore dataset into Power BI.
+- Examined the dataset structure and reviewed the available columns.
+- Checked for missing values and duplicate records.
+- Standardised text fields, including customer segments, product categories, regions and shipping modes.
+- Converted Order Date and Ship Date into appropriate Date data types.
+- Converted Sales, Profit, Quantity and other numerical fields into appropriate numeric data types.
+- Reviewed and corrected inconsistent categorical values.
+- Created additional date-related fields to support time-series analysis.
+- Established relationships within the data model where required.
+- Validated the sales and profit calculations to ensure consistency.
+
+The prepared dataset was structured to support sales performance analysis, regional comparisons and interactive reporting.
+
+### Exploratory Data Analysis 
+
+Exploratory Data Analysis was conducted to understand sales patterns, product performance and geographical distribution.
+
+The analysis focused on:
+
+* Total sales and profit distribution.
+* Sales performance across customer segments.
+* Sales contribution by product category.
+* Regional sales performance.
+* Profitability across geographical regions.
+* Quantity of products sold.
+* Average order value.
+* Sales trends by order date.
+* Shipping trends by ship date.
+* Performance across different shipping methods.
+
+### Data Analysis
+
+DAX measures and calculated columns were developed to support the analysis.
+
+The main Key Performance Indicators are as follows:
+
+* Total Sales.
+* Total Profit.
+* Total Quantity Sold.
+* Average Order Value.
+
+The dashboard was also designed around the following analytical areas:
+
+1. Sales Trend: This examines changes in sales performance over time using Order Date to identify growth patterns and periods of stronger sales activity.
+
+2. Sales by Category: This was designed to compare sales generated by Technology, Furniture and Office Supplies to identify the strongest product categories.
+
+3. Sales by Region: It evaluates sales performance across geographical regions to identify high-performing and underperforming markets.
+
+4. Profit per Region: This compares profitability across geographical regions to identify areas contributing most to overall business profit.
+
+5. Sales Trend by Ship Date: This was designed to examine sales performance using shipping dates to assess trends associated with order fulfilment periods.
+
+6. Sales Trend by Order Date: This evaluates sales generated across different order years to identify changes in customer purchasing activity.
+
+Interactive slicers were incorporated to enable users to filter the dashboard by:
+
+* Customer Segment: Consumer, Corporate and Home Office.
+* Shipping Mode: First Class, Same Day, Second Class and Standard Class.
+
+These filters allow management to examine sales and profitability across different customer and operational segments.
+
+### Results and Findings
+
+The results from the analysis are as follows:
+
+- The business generated total sales of approximately 6.51 million, demonstrating the overall revenue performance represented in the dataset.
+- Total profit stood at approximately 749.24 thousand, indicating positive overall profitability across the transactions analysed.
+- A total of approximately 92,160 units were sold, highlighting the volume of products moved across the business.
+- The average order value was approximately 496.65, providing an indication of the average sales value associated with customer orders.
+- Sales increased consistently between 2011 and 2014, rising from approximately 1.17 million in 2011 to 2.14 million in 2014. This represents an increase of approximately 82.9% over the period.
+- Technology was the highest-performing product category, generating approximately 2.2 million in sales, followed by Furniture at approximately 2.1 million and Office Supplies at approximately 2.0 million.
+- The Central region recorded the highest sales contribution at approximately 2.8 million, followed by the South region at approximately 1.7 million and the North region at approximately 1.3 million.
+- The Profit per Region analysis shows that the Central region was also the strongest contributor to regional profitability, generating approximately 0.3 million in profit.
+- The sales trend by ship date shows an overall increase between 2011 and 2014, followed by a sharp decline in 2015. This requires further investigation to establish whether the decline reflects incomplete reporting or a genuine change in business performance.
+- The interactive dashboard allows management to compare Consumer, Corporate and Home Office segments and examine how different shipping methods relate to sales performance.
+
+### Recommendations
+
+Based on the analysis, the following recommendations are proposed:
+
+- The positive sales trend observed between 2011 and 2014 should be strengthened through targeted marketing, customer retention and expansion strategies.
+- A strong inventory and marketing support for Technology products should be maintained while investigating opportunities to improve Furniture and Office Supplies sales.
+- The sales strategies of lower-performing regions should be reviewed and identify opportunities to increase market penetration.
+- It is important to investigate the factors contributing to the Central region’s strong sales and profitability and consider applying successful practices in other regions.
+- Profit and sales should be monitored to ensure that revenue growth translates into sustainable business profitability.
+- The performance and cost implications of different shipping methods should be evaluated to improve delivery efficiency and control fulfilment expenses.
+- Appropriate cross-selling, product bundling and customer loyalty initiatives should be introduced to encourage higher-value purchases.
+- The sharp decline shown in the 2015 shipping-date trend should be investigated to determine whether it reflects incomplete data or an operational issue.
+
+### Limitations
+
+The project has the following limitations:
+
+* The analysis is based on historical transaction data and may not reflect current business performance.
+* The dataset covers a limited reporting period, which may restrict long-term forecasting.
+* The dashboard provides descriptive analysis and does not independently establish the causes of changes in sales or profitability.
+* The analysis does not fully incorporate external factors such as inflation, competition, market demand and economic conditions.
+* Profitability analysis may require additional cost information to understand the underlying drivers of profit margins.
+* The sharp decline in the 2015 shipping-date trend requires validation before drawing operational conclusions.
+* The dashboard is a business intelligence and decision-support tool rather than a predictive sales forecasting system.
+
+### References
+
+* Global Superstore Dataset 
+* Microsoft Learn – Power BI documentation.
+* Microsoft Learn – Power Query documentation.
+* Microsoft Learn – DAX (Data Analysis Expressions) reference.
+* Microsoft Learn – Power BI data modelling and visualisation documentation.
